@@ -1,15 +1,9 @@
 <script>
 export default {
   name: "App",
-  }
+}
 </script>
 
 <template>
-  <h1>Hello</h1>
+  <router-view />
 </template>
-
-<style lang="scss">
-@use "sass:color";
-@import "main.scss";
-
-</style>
