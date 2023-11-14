@@ -1,6 +1,6 @@
 <script>
-import LayoutHeader from "../components/LayoutHeader.vue"; 
-import LayoutFooter from '../components/LayoutFooter.vue'; 
+import LayoutHeader from "../components/LayoutHeader.vue"
+import LayoutFooter from '../components/LayoutFooter.vue'
 
 export default {
   name: "HomeView",
@@ -59,7 +59,7 @@ export default {
 
     .head {
       font-weight: 700;
-      font-size: 3rem;
+      font-size: min(12vw, 3rem);
       color: $clr-off-black;
     }
 
@@ -86,27 +86,31 @@ export default {
 
 @media screen and (width >= 576px) {
   .home {
+    
     .hero {
       width: 50%;
       align-self: center;
+      padding: 0;
     }
   }
 }
 
-@media screen and (width >= 576px) {
+@media screen and (width >= 1024px) {
   .home {
     flex-direction: row;
+    align-items: center;
     gap: 0;
+    padding: 2rem;
 
     .article {
       order: 1;
       width: 50%;
-      padding: 1rem;
+      padding: 0;
+      gap: 1.5rem;
     }
 
     .hero {
       order: 2;
-      padding: 1rem;
     }
   }
 }

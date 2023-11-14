@@ -73,8 +73,6 @@ export default {
   .navbar {
     @include flex-col;
     align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
 
     .head {
       color: $clr-off-black;
@@ -104,22 +102,13 @@ export default {
 @media screen and (width >= 576px) {
   .footer {
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
-    .info,
-    .navbar {
-      width: 50%;
-    }
   }
 }
 
 @media screen and (width >= 1024px) {
   .footer {
     padding-inline: 2rem !important;
-    .info,
-    .navbar {
-      width: 33%;
-    }
   }
 }
 </style>
