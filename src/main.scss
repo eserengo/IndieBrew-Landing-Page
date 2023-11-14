@@ -45,6 +45,7 @@ body {
 @mixin btn {
   text-decoration: none;
   font-size: 0.75rem;
+  letter-spacing: 1px;
   border: 1px solid $clr-off-sky;
   border-radius: 0.25rem;
   padding: 1rem 2rem;
@@ -54,8 +55,9 @@ body {
 
   &:hover,
   &:focus {
+    cursor: pointer;
     color: $clr-off-sky;
-    background-color: $clr-off-white;
+    background-image: linear-gradient(to right, $clr-off-white, $clr-off-white, $clr-off-sand);
   }
 
   .strong {

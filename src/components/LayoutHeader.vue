@@ -40,7 +40,8 @@ export default {
     <img
       src="../assets/logo.svg"
       alt="IndieBrew logo" 
-      class="logo" />
+      class="logo" 
+    />
 
     <nav v-if="media">
       <section 

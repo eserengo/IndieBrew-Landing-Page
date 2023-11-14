@@ -53,7 +53,7 @@ export default {
 
     .head {
       font-weight: 700;
-      font-size: min(12vw, 3rem);
+      font-size: min(9vw, 2rem);
       color: $clr-off-black;
     }
 
