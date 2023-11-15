@@ -20,7 +20,7 @@ export default {
     },
 
     handleSubmit() {
-      console.log("submitted");
+      this.$router.push({ name: "home" });
     }
   },
 
@@ -80,7 +80,6 @@ export default {
     </article>
     <form class="form" action="#" @submit.prevent="handleSubmit">
       <h3 class="subhead">Create your IndieBrew Account</h3>
-
       <section>
         <label class="label" for="email">Email</label>
         <input
@@ -129,7 +128,6 @@ export default {
           the <em class="em">Terms & Conditions</em>.
         </label>
       </section>
-
       <button
         type="submit"
         class="btn"
